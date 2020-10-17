@@ -1,0 +1,42 @@
+generate_world_config:
+  random_world:
+    nrOfBlocks: 10
+    angleParam: 
+      x: 0.20
+      y: 0.20
+      z: 0.0
+    block_size: 
+      min:
+         x: 0.33
+         y: 0.33 
+         z: 0.05
+      max:
+         x: 1.0
+         y: 1.0
+         z: 0.15
+    block_position:
+      min:
+         x:  1.0
+         y: -0.7
+         z:  0.0
+      max:
+         x: 2.0
+         y: 2.0
+         z: 0.0
+  stairs:
+    nr_of_steps: 4
+    origin:
+       x: 1.1
+       y: 0.0
+    size:
+       x: 0.4
+       y: 0.6
+       z: 0.075
+  stepping_stones:
+    nr_of_steps: 3
+    size:
+      x: 0.25
+      y: 0.2
+      z: 0.05
+    height_difference: 0.12
+    step_height: 0.12

@@ -1,0 +1,31 @@
+<launch>
+
+
+<arg name="debug" default="false" />
+
+<param name="/generate_world/filenameBlock" 
+       value ="$(find generate_world)/worlds/block.xml" />
+<param name="/generate_world/filenameWorld" 
+       value ="$(find generate_world)/worlds/general_world.xml"/>
+<param name="/generate_world/backupSaveFile" 
+       value ="$(find generate_world)/worlds/"/>
+<param name="/generate_world/savefileWorld"  
+       value ="$(find pal_gazebo_worlds)/worlds/" />
+
+<rosparam 
+	command="load" 
+	file="$(find generate_world)/config/world_parameters.yaml"
+/>
+
+<group if="$(eval arg('debug') == false)">
+
+	<node 
+		pkg = "generate_world"
+		type = "create_stairs_node"
+		name = "create_stairs"
+		output = "screen"
+	/>
+</group>
+
+
+</launch>

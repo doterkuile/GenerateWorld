@@ -1,0 +1,931 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+    <world name="default">
+        <physics type="ode">
+            <gravity>0 0 -9.81</gravity>
+            <ode>
+                <solver>
+                    <type>quick</type>
+                    <iters>50</iters>
+                    <sor>1.4</sor>
+                </solver>
+                <constraints>
+                    <cfm>0.0</cfm>
+                    <erp>0.2</erp>
+                    <contact_max_correcting_vel>100.0</contact_max_correcting_vel>
+                    <contact_surface_layer>0.0</contact_surface_layer>
+                </constraints>
+            </ode>
+            <real_time_update_rate>1000</real_time_update_rate>
+            <max_step_size>0.001</max_step_size>
+        </physics>
+        <!-- A global light source -->
+        <include>
+            <uri>model://sun</uri>
+        </include>
+        <!-- A ground plane -->
+        <include>
+            <uri>model://ground_plane</uri>
+        </include>
+        <model name="rectangle_0">
+            <pose>3.957819 0.136645 0.000000 0.162477 -0.027759 0.000000</pose>
+            <static>true</static>
+            <link name="rectangle_0_body">
+                <inertial>
+                    <mass>1.0</mass>
+                    <inertia>
+                        <ixx>1.0</ixx>
+                        <ixy>0.0</ixy>
+                        <ixz>0.0</ixz>
+                        <iyy>1.0</iyy>
+                        <iyz>0.0</iyz>
+                        <izz>1.0</izz>
+                    </inertia>
+                </inertial>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>0.453208 0.949988 0.091186</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>100</mu>
+                                <mu2>100</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="visual">
+                    <geometry>
+                        <box>
+                            <size>0.453208 0.949988 0.091186</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>file://media/materials/scripts/gazebo.material</uri>
+                            <name>Gazebo/Blue</name>
+                        </script>
+                    </material>
+                </visual>
+            </link>
+        </model>
+        <model name="rectangle_1">
+            <pose>3.093656 0.179176 0.000000 0.168827 0.152456 0.000000</pose>
+            <static>true</static>
+            <link name="rectangle_1_body">
+                <inertial>
+                    <mass>1.0</mass>
+                    <inertia>
+                        <ixx>1.0</ixx>
+                        <ixy>0.0</ixy>
+                        <ixz>0.0</ixz>
+                        <iyy>1.0</iyy>
+                        <iyz>0.0</iyz>
+                        <izz>1.0</izz>
+                    </inertia>
+                </inertial>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>0.732684 0.630580 0.055171</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>100</mu>
+                                <mu2>100</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="visual">
+                    <geometry>
+                        <box>
+                            <size>0.732684 0.630580 0.055171</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>file://media/materials/scripts/gazebo.material</uri>
+                            <name>Gazebo/Blue</name>
+                        </script>
+                    </material>
+                </visual>
+            </link>
+        </model>
+        <model name="rectangle_2">
+            <pose>1.017850 0.162771 0.000000 -0.183376 0.016063 0.000000</pose>
+            <static>true</static>
+            <link name="rectangle_2_body">
+                <inertial>
+                    <mass>1.0</mass>
+                    <inertia>
+                        <ixx>1.0</ixx>
+                        <ixy>0.0</ixy>
+                        <ixz>0.0</ixz>
+                        <iyy>1.0</iyy>
+                        <iyz>0.0</iyz>
+                        <izz>1.0</izz>
+                    </inertia>
+                </inertial>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>0.493209 0.946595 0.051249</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>100</mu>
+                                <mu2>100</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="visual">
+                    <geometry>
+                        <box>
+                            <size>0.493209 0.946595 0.051249</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>file://media/materials/scripts/gazebo.material</uri>
+                            <name>Gazebo/Blue</name>
+                        </script>
+                    </material>
+                </visual>
+            </link>
+        </model>
+        <model name="rectangle_3">
+            <pose>4.778818 0.347739 0.000000 0.110242 0.092857 0.000000</pose>
+            <static>true</static>
+            <link name="rectangle_3_body">
+                <inertial>
+                    <mass>1.0</mass>
+                    <inertia>
+                        <ixx>1.0</ixx>
+                        <ixy>0.0</ixy>
+                        <ixz>0.0</ixz>
+                        <iyy>1.0</iyy>
+                        <iyz>0.0</iyz>
+                        <izz>1.0</izz>
+                    </inertia>
+                </inertial>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>0.825089 0.425827 0.083728</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>100</mu>
+                                <mu2>100</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="visual">
+                    <geometry>
+                        <box>
+                            <size>0.825089 0.425827 0.083728</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>file://media/materials/scripts/gazebo.material</uri>
+                            <name>Gazebo/Blue</name>
+                        </script>
+                    </material>
+                </visual>
+            </link>
+        </model>
+        <model name="rectangle_4">
+            <pose>1.896730 0.550920 0.000000 -0.163054 -0.011449 0.000000</pose>
+            <static>true</static>
+            <link name="rectangle_4_body">
+                <inertial>
+                    <mass>1.0</mass>
+                    <inertia>
+                        <ixx>1.0</ixx>
+                        <ixy>0.0</ixy>
+                        <ixz>0.0</ixz>
+                        <iyy>1.0</iyy>
+                        <iyz>0.0</iyz>
+                        <izz>1.0</izz>
+                    </inertia>
+                </inertial>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>0.613265 0.507339 0.145061</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>100</mu>
+                                <mu2>100</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="visual">
+                    <geometry>
+                        <box>
+                            <size>0.613265 0.507339 0.145061</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>file://media/materials/scripts/gazebo.material</uri>
+                            <name>Gazebo/Blue</name>
+                        </script>
+                    </material>
+                </visual>
+            </link>
+        </model>
+        <model name="rectangle_5">
+            <pose>1.813929 -0.607823 0.000000 -0.111885 0.045821 0.000000</pose>
+            <static>true</static>
+            <link name="rectangle_5_body">
+                <inertial>
+                    <mass>1.0</mass>
+                    <inertia>
+                        <ixx>1.0</ixx>
+                        <ixy>0.0</ixy>
+                        <ixz>0.0</ixz>
+                        <iyy>1.0</iyy>
+                        <iyz>0.0</iyz>
+                        <izz>1.0</izz>
+                    </inertia>
+                </inertial>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>0.628971 0.846574 0.126407</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>100</mu>
+                                <mu2>100</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="visual">
+                    <geometry>
+                        <box>
+                            <size>0.628971 0.846574 0.126407</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>file://media/materials/scripts/gazebo.material</uri>
+                            <name>Gazebo/Blue</name>
+                        </script>
+                    </material>
+                </visual>
+            </link>
+        </model>
+        <model name="rectangle_6">
+            <pose>3.266144 -0.647778 0.000000 -0.158566 0.171236 0.000000</pose>
+            <static>true</static>
+            <link name="rectangle_6_body">
+                <inertial>
+                    <mass>1.0</mass>
+                    <inertia>
+                        <ixx>1.0</ixx>
+                        <ixy>0.0</ixy>
+                        <ixz>0.0</ixz>
+                        <iyy>1.0</iyy>
+                        <iyz>0.0</iyz>
+                        <izz>1.0</izz>
+                    </inertia>
+                </inertial>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>0.704568 0.915996 0.124389</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>100</mu>
+                                <mu2>100</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="visual">
+                    <geometry>
+                        <box>
+                            <size>0.704568 0.915996 0.124389</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>file://media/materials/scripts/gazebo.material</uri>
+                            <name>Gazebo/Blue</name>
+                        </script>
+                    </material>
+                </visual>
+            </link>
+        </model>
+        <model name="rectangle_7">
+            <pose>4.367774 -0.644306 0.000000 -0.178762 -0.049758 0.000000</pose>
+            <static>true</static>
+            <link name="rectangle_7_body">
+                <inertial>
+                    <mass>1.0</mass>
+                    <inertia>
+                        <ixx>1.0</ixx>
+                        <ixy>0.0</ixy>
+                        <ixz>0.0</ixz>
+                        <iyy>1.0</iyy>
+                        <iyz>0.0</iyz>
+                        <izz>1.0</izz>
+                    </inertia>
+                </inertial>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>0.463793 0.897419 0.087255</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>100</mu>
+                                <mu2>100</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="visual">
+                    <geometry>
+                        <box>
+                            <size>0.463793 0.897419 0.087255</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>file://media/materials/scripts/gazebo.material</uri>
+                            <name>Gazebo/Blue</name>
+                        </script>
+                    </material>
+                </visual>
+            </link>
+        </model>
+        <model name="rectangle_8">
+            <pose>2.294374 -0.000193 0.000000 -0.182519 0.086404 0.000000</pose>
+            <static>true</static>
+            <link name="rectangle_8_body">
+                <inertial>
+                    <mass>1.0</mass>
+                    <inertia>
+                        <ixx>1.0</ixx>
+                        <ixy>0.0</ixy>
+                        <ixz>0.0</ixz>
+                        <iyy>1.0</iyy>
+                        <iyz>0.0</iyz>
+                        <izz>1.0</izz>
+                    </inertia>
+                </inertial>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>0.490415 0.780663 0.124919</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>100</mu>
+                                <mu2>100</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="visual">
+                    <geometry>
+                        <box>
+                            <size>0.490415 0.780663 0.124919</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>file://media/materials/scripts/gazebo.material</uri>
+                            <name>Gazebo/Blue</name>
+                        </script>
+                    </material>
+                </visual>
+            </link>
+        </model>
+        <model name="rectangle_9">
+            <pose>2.605132 -0.612097 0.000000 0.046243 -0.038123 0.000000</pose>
+            <static>true</static>
+            <link name="rectangle_9_body">
+                <inertial>
+                    <mass>1.0</mass>
+                    <inertia>
+                        <ixx>1.0</ixx>
+                        <ixy>0.0</ixy>
+                        <ixz>0.0</ixz>
+                        <iyy>1.0</iyy>
+                        <iyz>0.0</iyz>
+                        <izz>1.0</izz>
+                    </inertia>
+                </inertial>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>0.373481 0.388719 0.085042</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>100</mu>
+                                <mu2>100</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="visual">
+                    <geometry>
+                        <box>
+                            <size>0.373481 0.388719 0.085042</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>file://media/materials/scripts/gazebo.material</uri>
+                            <name>Gazebo/Blue</name>
+                        </script>
+                    </material>
+                </visual>
+            </link>
+        </model>
+        <model name="rectangle_10">
+            <pose>1.002786 -0.668448 0.000000 -0.035278 -0.005282 0.000000</pose>
+            <static>true</static>
+            <link name="rectangle_10_body">
+                <inertial>
+                    <mass>1.0</mass>
+                    <inertia>
+                        <ixx>1.0</ixx>
+                        <ixy>0.0</ixy>
+                        <ixz>0.0</ixz>
+                        <iyy>1.0</iyy>
+                        <iyz>0.0</iyz>
+                        <izz>1.0</izz>
+                    </inertia>
+                </inertial>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>0.492754 0.636921 0.088283</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>100</mu>
+                                <mu2>100</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="visual">
+                    <geometry>
+                        <box>
+                            <size>0.492754 0.636921 0.088283</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>file://media/materials/scripts/gazebo.material</uri>
+                            <name>Gazebo/Blue</name>
+                        </script>
+                    </material>
+                </visual>
+            </link>
+        </model>
+        <model name="rectangle_11">
+            <pose>2.694997 0.676221 0.000000 0.103912 -0.055280 0.000000</pose>
+            <static>true</static>
+            <link name="rectangle_11_body">
+                <inertial>
+                    <mass>1.0</mass>
+                    <inertia>
+                        <ixx>1.0</ixx>
+                        <ixy>0.0</ixy>
+                        <ixz>0.0</ixz>
+                        <iyy>1.0</iyy>
+                        <iyz>0.0</iyz>
+                        <izz>1.0</izz>
+                    </inertia>
+                </inertial>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>0.391116 0.457799 0.060465</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>100</mu>
+                                <mu2>100</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="visual">
+                    <geometry>
+                        <box>
+                            <size>0.391116 0.457799 0.060465</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>file://media/materials/scripts/gazebo.material</uri>
+                            <name>Gazebo/Blue</name>
+                        </script>
+                    </material>
+                </visual>
+            </link>
+        </model>
+        <model name="rectangle_12">
+            <pose>3.458847 0.670051 0.000000 -0.194641 0.104219 0.000000</pose>
+            <static>true</static>
+            <link name="rectangle_12_body">
+                <inertial>
+                    <mass>1.0</mass>
+                    <inertia>
+                        <ixx>1.0</ixx>
+                        <ixy>0.0</ixy>
+                        <ixz>0.0</ixz>
+                        <iyy>1.0</iyy>
+                        <iyz>0.0</iyz>
+                        <izz>1.0</izz>
+                    </inertia>
+                </inertial>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>0.385851 0.349472 0.101981</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>100</mu>
+                                <mu2>100</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="visual">
+                    <geometry>
+                        <box>
+                            <size>0.385851 0.349472 0.101981</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>file://media/materials/scripts/gazebo.material</uri>
+                            <name>Gazebo/Blue</name>
+                        </script>
+                    </material>
+                </visual>
+            </link>
+        </model>
+        <model name="rectangle_13">
+            <pose>1.665399 -0.034797 0.000000 0.133813 0.112243 0.000000</pose>
+            <static>true</static>
+            <link name="rectangle_13_body">
+                <inertial>
+                    <mass>1.0</mass>
+                    <inertia>
+                        <ixx>1.0</ixx>
+                        <ixy>0.0</ixy>
+                        <ixz>0.0</ixz>
+                        <iyy>1.0</iyy>
+                        <iyz>0.0</iyz>
+                        <izz>1.0</izz>
+                    </inertia>
+                </inertial>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>0.400234 0.386290 0.110480</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>100</mu>
+                                <mu2>100</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="visual">
+                    <geometry>
+                        <box>
+                            <size>0.400234 0.386290 0.110480</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>file://media/materials/scripts/gazebo.material</uri>
+                            <name>Gazebo/Blue</name>
+                        </script>
+                    </material>
+                </visual>
+            </link>
+        </model>
+        <model name="rectangle_14">
+            <pose>4.992021 -0.555580 0.000000 0.127103 0.005661 0.000000</pose>
+            <static>true</static>
+            <link name="rectangle_14_body">
+                <inertial>
+                    <mass>1.0</mass>
+                    <inertia>
+                        <ixx>1.0</ixx>
+                        <ixy>0.0</ixy>
+                        <ixz>0.0</ixz>
+                        <iyy>1.0</iyy>
+                        <iyz>0.0</iyz>
+                        <izz>1.0</izz>
+                    </inertia>
+                </inertial>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>0.443177 0.377043 0.093020</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>100</mu>
+                                <mu2>100</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="visual">
+                    <geometry>
+                        <box>
+                            <size>0.443177 0.377043 0.093020</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>file://media/materials/scripts/gazebo.material</uri>
+                            <name>Gazebo/Blue</name>
+                        </script>
+                    </material>
+                </visual>
+            </link>
+        </model>
+        <model name="rectangle_15">
+            <pose>3.116861 0.698378 0.000000 -0.163106 0.184894 0.000000</pose>
+            <static>true</static>
+            <link name="rectangle_15_body">
+                <inertial>
+                    <mass>1.0</mass>
+                    <inertia>
+                        <ixx>1.0</ixx>
+                        <ixy>0.0</ixy>
+                        <ixz>0.0</ixz>
+                        <iyy>1.0</iyy>
+                        <iyz>0.0</iyz>
+                        <izz>1.0</izz>
+                    </inertia>
+                </inertial>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>0.399201 0.352779 0.125928</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>100</mu>
+                                <mu2>100</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="visual">
+                    <geometry>
+                        <box>
+                            <size>0.399201 0.352779 0.125928</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>file://media/materials/scripts/gazebo.material</uri>
+                            <name>Gazebo/Blue</name>
+                        </script>
+                    </material>
+                </visual>
+            </link>
+        </model>
+        <model name="rectangle_16">
+            <pose>4.278659 0.687008 0.000000 -0.018084 -0.001094 0.000000</pose>
+            <static>true</static>
+            <link name="rectangle_16_body">
+                <inertial>
+                    <mass>1.0</mass>
+                    <inertia>
+                        <ixx>1.0</ixx>
+                        <ixy>0.0</ixy>
+                        <ixz>0.0</ixz>
+                        <iyy>1.0</iyy>
+                        <iyz>0.0</iyz>
+                        <izz>1.0</izz>
+                    </inertia>
+                </inertial>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>0.336311 0.393526 0.106805</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>100</mu>
+                                <mu2>100</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="visual">
+                    <geometry>
+                        <box>
+                            <size>0.336311 0.393526 0.106805</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>file://media/materials/scripts/gazebo.material</uri>
+                            <name>Gazebo/Blue</name>
+                        </script>
+                    </material>
+                </visual>
+            </link>
+        </model>
+        <model name="rectangle_17">
+            <pose>2.769020 -0.224809 0.000000 0.173680 0.129302 0.000000</pose>
+            <static>true</static>
+            <link name="rectangle_17_body">
+                <inertial>
+                    <mass>1.0</mass>
+                    <inertia>
+                        <ixx>1.0</ixx>
+                        <ixy>0.0</ixy>
+                        <ixz>0.0</ixz>
+                        <iyy>1.0</iyy>
+                        <iyz>0.0</iyz>
+                        <izz>1.0</izz>
+                    </inertia>
+                </inertial>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>0.358800 0.349576 0.069063</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>100</mu>
+                                <mu2>100</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="visual">
+                    <geometry>
+                        <box>
+                            <size>0.358800 0.349576 0.069063</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>file://media/materials/scripts/gazebo.material</uri>
+                            <name>Gazebo/Blue</name>
+                        </script>
+                    </material>
+                </visual>
+            </link>
+        </model>
+        <model name="rectangle_18">
+            <pose>1.388187 0.697171 0.000000 0.194407 -0.141119 0.000000</pose>
+            <static>true</static>
+            <link name="rectangle_18_body">
+                <inertial>
+                    <mass>1.0</mass>
+                    <inertia>
+                        <ixx>1.0</ixx>
+                        <ixy>0.0</ixy>
+                        <ixz>0.0</ixz>
+                        <iyy>1.0</iyy>
+                        <iyz>0.0</iyz>
+                        <izz>1.0</izz>
+                    </inertia>
+                </inertial>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>0.340170 0.403731 0.135693</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>100</mu>
+                                <mu2>100</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="visual">
+                    <geometry>
+                        <box>
+                            <size>0.340170 0.403731 0.135693</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>file://media/materials/scripts/gazebo.material</uri>
+                            <name>Gazebo/Blue</name>
+                        </script>
+                    </material>
+                </visual>
+            </link>
+        </model>
+        <model name="rectangle_19">
+            <pose>4.870550 -0.207235 0.000000 0.174975 0.138772 0.000000</pose>
+            <static>true</static>
+            <link name="rectangle_19_body">
+                <inertial>
+                    <mass>1.0</mass>
+                    <inertia>
+                        <ixx>1.0</ixx>
+                        <ixy>0.0</ixy>
+                        <ixz>0.0</ixz>
+                        <iyy>1.0</iyy>
+                        <iyz>0.0</iyz>
+                        <izz>1.0</izz>
+                    </inertia>
+                </inertial>
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>0.391843 0.375464 0.072624</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>100</mu>
+                                <mu2>100</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="visual">
+                    <geometry>
+                        <box>
+                            <size>0.391843 0.375464 0.072624</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <script>
+                            <uri>file://media/materials/scripts/gazebo.material</uri>
+                            <name>Gazebo/Blue</name>
+                        </script>
+                    </material>
+                </visual>
+            </link>
+        </model>
+    </world>
+</sdf>
